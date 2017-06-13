@@ -8,7 +8,7 @@
 
 # see also: https://github.com/kinnalru/bluebutton
 
-note: To use hcidump, `apt-get install bluez-hcidump`. 
+#note: To use hcidump, `apt-get install bluez-hcidump`. 
 
 
 class Shutter3
