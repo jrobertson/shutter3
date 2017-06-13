@@ -32,6 +32,7 @@ class Shutter3
 
         if found > 2 then
           on_connect()
+          found = 0
           next
         end
       when /> 04 05 04 00 40 00 08 \n/
