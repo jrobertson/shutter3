@@ -14,7 +14,7 @@
 class Shutter3
 
   def initialize(bdid='', debug: false)
-    @bdid = bdid.split(':').reverse.join(' ')
+    @bdid = bdid
     @debug = debug
   end
 
@@ -23,10 +23,10 @@ class Shutter3
     button = nil
     found = 0
 
-    IO.popen('sudo hcidump --raw').each_line do |x| 
+    IO.popen('sudo hcidump --raw -i '+ @bdid).each_line do |x| 
 
       case x
-      when /#{@bdid}/
+      when /#{@bdid.split(':').reverse.join(' ')}/
 
         found += 1
 

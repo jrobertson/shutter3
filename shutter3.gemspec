@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'shutter3'
-  s.version = '0.1.2'
+  s.version = '0.1.3'
   s.summary = 'Uses the command `hcidump --raw` (see bluez-hcidump) to ' + 
       'detect the bluetooth button events for a wireless bluetooth remote ' + 
       'control shutter button.'
